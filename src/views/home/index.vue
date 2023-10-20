@@ -1,6 +1,7 @@
 <template>
   <div class="main">
-    首页
+    <input id="input" value="" name="" />
+    <button>你好</button>
   </div>
 </template>
 
@@ -26,5 +27,8 @@ export default {
 <style lang="scss" scoped>
   .main{
     color:red;
+    input{
+      width:100px;
+    }
   }
 </style>

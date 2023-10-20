@@ -4,3 +4,4 @@
 - 路由
 - scss配置
 - axios封装
+- 移动端适配，px2rem
