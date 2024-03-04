@@ -8,6 +8,9 @@ module.exports = {
     loaderOptions: {
       sass: {
         sassOptions: { outputStyle: 'expanded' },
+        prependData: `
+         @import "./src/styles/variables.scss";
+       `,
       },
       postcss: {
         plugins: [
@@ -21,11 +24,12 @@ module.exports = {
   },
   configureWebpack: (config) => {
     return {
+      devtool: 'source-map',
       resolve: {
         alias: {
           "@": resolve("src"),
         },
       },
     }
-}
+  }
 }
